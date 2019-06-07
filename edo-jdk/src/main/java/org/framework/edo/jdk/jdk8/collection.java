@@ -1,4 +1,4 @@
-package org.edo.framework.jdk8;
+package org.framework.edo.jdk8;
 
 /**
  * @Author L.Qiang

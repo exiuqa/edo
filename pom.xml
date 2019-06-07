@@ -10,7 +10,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.edo.framework</groupId>
+    <groupId>org.framework.edo</groupId>
     <artifactId>edo-parent</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
@@ -26,5 +26,11 @@
         <module>edo-activiti</module>
     </modules>
 
+    <build>
+        <pluginManagement>
+            <plugins>
 
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>

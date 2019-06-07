@@ -1,4 +1,4 @@
-package org.edo.framework.econcurrent.api;
+package org.framework.edo.concurrent.api;
 
 /**
  * @Author L.Qiang
