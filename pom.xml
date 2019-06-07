@@ -16,14 +16,14 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>edo-eMybatis</module>
-        <module>edo-eConcurrent</module>
-        <module>edo-eweb</module>
-        <module>edo-eDrooles</module>
-        <module>edo-eBatch</module>
-        <module>edo-eNetty</module>
-        <module>edo-eJdk</module>
-        <module>edo-eActiviti</module>
+        <module>edo-mybatis</module>
+        <module>edo-concurrent</module>
+        <module>edo-web</module>
+        <module>edo-drooles</module>
+        <module>edo-batch</module>
+        <module>edo-netty</module>
+        <module>edo-jdk</module>
+        <module>edo-activiti</module>
     </modules>
 
 
