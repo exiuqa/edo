@@ -1,4 +1,7 @@
-package org.framework.edo.jdk8;
+package org.framework.edo.jdk.jdk8;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @Author L.Qiang
@@ -8,4 +11,9 @@ package org.framework.edo.jdk8;
  */
 
 public class collection {
+    public static void main(String[] args) {
+        Map<String,Object> requestMap = new HashMap();
+        requestMap.put("custNo","11111111");
+        System.out.println("-----------exiuqa-----------值=" +  requestMap.get("custNo").toString()+ "," + "当前类=collection.main()");
+    }
 }
