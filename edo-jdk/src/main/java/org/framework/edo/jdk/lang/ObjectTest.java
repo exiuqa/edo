@@ -1,4 +1,4 @@
-package org.framework.edo.lang;
+package org.framework.edo.jdk.lang;
 
 import java.util.HashMap;
 import java.util.Map;

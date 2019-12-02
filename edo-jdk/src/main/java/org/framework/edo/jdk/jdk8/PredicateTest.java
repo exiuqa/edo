@@ -1,4 +1,4 @@
-package org.framework.edo.jdk8;
+package org.framework.edo.jdk.jdk8;
 
 import java.util.ArrayList;
 import java.util.Arrays;

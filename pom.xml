@@ -32,7 +32,9 @@
         <activiti.version>6.0.0</activiti.version>
         <liquibase.version>3.6.3</liquibase.version>
         <netty.version>4.1.36.Final</netty.version>
-        <lombok.version>1.16.20.0</lombok.version>
+        <lombok.version>1.18.10</lombok.version>
+        <mybatis.version>3.5.1</mybatis.version>
+        <oracle.version>11.2.0.4</oracle.version>
     </properties>
 
     <dependencyManagement>
@@ -57,7 +59,16 @@
                 <artifactId>netty-all</artifactId>
                 <version>${netty.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.oracle</groupId>
+                <artifactId>ojdbc6</artifactId>
+                <version>${oracle.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <build>
