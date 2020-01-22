@@ -26,6 +26,8 @@
         <module>edo-activiti</module>
         <module>edo-activiti7</module>
         <module>edo-office</module>
+        <module>edo-leetcode</module>
+        <module>edo-spike</module>
     </modules>
 
     <properties>

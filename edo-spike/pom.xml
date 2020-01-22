@@ -9,20 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.framework.edo</groupId>
-    <artifactId>edo-netty</artifactId>
-
-
-<dependencies>
-    <dependency>
-        <groupId>org.projectlombok</groupId>
-        <artifactId>lombok</artifactId>
-    </dependency>
-    <dependency>
-        <groupId>io.netty</groupId>
-        <artifactId>netty-all</artifactId>
-    </dependency>
-</dependencies>
+    <artifactId>edo-spike</artifactId>
 
 
 </project>
