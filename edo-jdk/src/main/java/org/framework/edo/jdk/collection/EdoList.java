@@ -1,8 +1,5 @@
 package org.framework.edo.jdk.collection;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @Author L.Qiang
  * @Email: exiuqa@gmail.com
@@ -12,13 +9,17 @@ import java.util.List;
 
 public class EdoList {
     public static void main(String[] args) {
-        List<Object> list = new ArrayList();
-        list.add(null);
-        System.out.println("-----------exiuqa-----------list值=" + list + "," + "当前类=EdoList.main()");
+//        List<Object> list = new ArrayList();
+////        list.add(null);
+////        System.out.println("-----------exiuqa-----------list值=" + list + "," + "当前类=EdoList.main()");
+////
+////
+////        int i = 10;
+////        i = 10 >> 2;
 
 
-        int i = 10;
-        i = 10 << 2;
-        System.out.println("-----------exiuqa-----------i值=" + i + "," + "当前类=EdoList.main()");
+        String[] arr = {"1", "2", "3", "4"};
+        System.arraycopy(arr, 3, arr, 2, 1);
+        System.out.println("-----------exiuqa-----------i值=" + arr.toString() + "," + "当前类=EdoList.main()");
     }
 }

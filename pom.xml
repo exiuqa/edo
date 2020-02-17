@@ -37,10 +37,16 @@
         <lombok.version>1.18.10</lombok.version>
         <mybatis.version>3.5.1</mybatis.version>
         <oracle.version>11.2.0.4</oracle.version>
+        <mybatis.springboot.version>2.1.1</mybatis.springboot.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.springboot.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.activiti</groupId>
                 <artifactId>activiti-spring-boot-starter-basic</artifactId>

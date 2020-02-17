@@ -1,0 +1,55 @@
+package org.framework.edo.spike.result;
+
+public class Result<T> {
+    private int code;
+    private String msg;
+    private T data;
+
+    /**
+     * 成功时候的调用
+     */
+    public static <E> Result success(E data) {
+        return new Result(CodeMsg.SUCCESS, CodeMsg.SUCCESS_MSG, data);
+    }
+
+    /**
+     * 失败时候的调用
+     */
+    public static <E> Result fail(E data) {
+        return new Result(CodeMsg.SUCCESS, CodeMsg.SUCCESS_MSG, data);
+    }
+
+
+    private Result() {
+    }
+
+    public Result(int code, String msg, T data) {
+        this.code = code;
+        this.msg = msg;
+        this.data = data;
+    }
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
+    }
+}
