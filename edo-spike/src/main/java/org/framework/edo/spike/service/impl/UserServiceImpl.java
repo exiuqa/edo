@@ -11,6 +11,10 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
 
+    public UserServiceImpl() {
+        System.out.println("ss");
+    }
+
     @Override
     public User selectByPrimaryKey(String id) {
         Long lo = Long.valueOf(id);

@@ -13,11 +13,6 @@
     <artifactId>edo-jdk</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>com.chrisnewland</groupId>
-            <artifactId>jitwatch</artifactId>
-            <version>1.0.0</version>
-        </dependency>
 
         <dependency>
             <groupId>cglib</groupId>
@@ -28,15 +23,10 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.sonarsource.scanner.maven</groupId>
-                <artifactId>sonar-maven-plugin</artifactId>
-                <version>3.3.0.603</version>
-            </plugin>
+            <!--            <plugin>-->
+            <!--                <groupId>org.springframework.boot</groupId>-->
+            <!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+            <!--            </plugin>-->
         </plugins>
     </build>
 </project>

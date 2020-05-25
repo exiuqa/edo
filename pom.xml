@@ -28,16 +28,21 @@
         <module>edo-office</module>
         <module>edo-leetcode</module>
         <module>edo-spike</module>
+        <module>edo-spring</module>
     </modules>
 
     <properties>
         <activiti.version>6.0.0</activiti.version>
+        <jmh.version>1.21</jmh.version>
         <liquibase.version>3.6.3</liquibase.version>
-        <netty.version>4.1.36.Final</netty.version>
+        <log4j.version>1.2.17</log4j.version>
         <lombok.version>1.18.10</lombok.version>
-        <mybatis.version>3.5.1</mybatis.version>
-        <oracle.version>11.2.0.4</oracle.version>
+        <mysql.version>5.1.6</mysql.version>
         <mybatis.springboot.version>2.1.1</mybatis.springboot.version>
+        <mybatis.version>3.5.1</mybatis.version>
+        <netty.version>4.1.36.Final</netty.version>
+        <oracle.version>11.2.0.4</oracle.version>
+
     </properties>
 
     <dependencyManagement>
@@ -52,6 +57,7 @@
                 <artifactId>activiti-spring-boot-starter-basic</artifactId>
                 <version>${activiti.version}</version>
             </dependency>
+            <!--管理和应用数据库变化.将所有数据库的变化(包括结构和数据) 都保存在XML文件中，便于版本控制-->
             <dependency>
                 <groupId>org.liquibase</groupId>
                 <artifactId>liquibase-core</artifactId>
@@ -77,6 +83,31 @@
                 <artifactId>ojdbc6</artifactId>
                 <version>${oracle.version}</version>
             </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+
+            <!-- jmh-->
+            <dependency>
+                <groupId>org.openjdk.jmh</groupId>
+                <artifactId>jmh-core</artifactId>
+                <version>${jmh.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjdk.jmh</groupId>
+                <artifactId>jmh-generator-annprocess</artifactId>
+                <version>${jmh.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <!-- jmh-->
+
         </dependencies>
     </dependencyManagement>
     <build>
